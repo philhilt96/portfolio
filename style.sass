@@ -1,0 +1,347 @@
+*
+	margin: 0
+	padding: 0
+
+html
+	scroll-behavior: smooth
+
+body
+	margin: 0
+	padding: 0
+	font-size: 1rem
+	height: auto
+	width: 100vw
+	max-width: 100%
+	font-family: 'PT Sans', sans-serif
+	color: #fff
+	background: #404040
+
+a
+	color: #fff
+	text-decoration: none
+
+.page-container
+	min-height: 100vh
+	width: 100%
+	position: relative
+
+.text
+	height: auto
+	margin-top: 50px
+	width: 70%
+
+///*****************
+// Home section
+//*****************/
+
+#home
+	background-image: url(images/background.svg)
+	background-position: top
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	transition: 0.5s
+
+.title-container
+	float: left
+	margin: 5% 0 0 10%
+	color: #fff
+	position: absolute
+	p
+		display: inline-block
+		background: #000
+		overflow: hidden
+		animation-name: slide-in
+		animation-duration: 1.5s
+		animation-fill-mode: forwards
+		cursor: pointer
+	p:hover
+		transform: scale(1.05)
+	#name
+		height: 66px
+		width: 200px
+		font-size: 320%
+		margin-bottom: 25px
+		p
+			box-sizing: border-box
+			padding: 0 10px
+	#front, #development, #design
+		font-size: 160%
+		height: 33px
+		margin: 10px 0
+		display: flex
+		p
+			padding: 0 40px 0 10px
+			animation-duration: 2s
+	#front
+		width: 157px
+	#development
+		width: 225px
+	#design
+		width: 126px
+
+.toggle-container
+	float: right
+	color: #fff
+	margin: 5% 5% 0 0
+	text-align: center
+	span
+		background: #000
+		padding: 0 3px
+	.slider
+		width: 40px
+		height: 20px
+		border-radius: 10px
+		background: #fff
+		margin: 10px auto
+		.toggler
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			background: #000
+			margin-left: 0px
+			transition: 0.3s
+			cursor: pointer
+
+.arrow-container
+	height: 30px
+	width: auto
+	position: absolute
+	bottom: 25px
+	left: calc(50% - 20px)
+	opacity: 0
+	animation: fade-in 2s linear 4s infinite
+	img
+		height: 100%
+		cursor: pointer
+
+///*****************
+// Navigation
+//*****************/
+nav
+	height: 50px
+	width: 100%
+	position: absolute
+	background: #404040
+	top: 0
+	z-index: 100
+	ul
+		width: 40%
+		float: left
+		height: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 150%
+		li
+			list-style-type: none
+			padding: 0 50px
+	.logo-container
+		width: 20%
+		height: 100%
+		float: right
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			width: 50%
+			max-height: 30px
+			img
+				max-width: 90%
+
+///*****************
+// About
+//*****************/
+
+#about, #work, #contact
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-evenly
+	position: relative
+	h1
+		font-size: 300%
+		line-height: 200%
+	p
+		font-size: 150%
+		line-height: 150%
+		a
+			text-decoration: underline
+
+#about
+	h1
+		padding-bottom: 30px
+
+///*****************
+// Work
+//*****************/
+
+#work
+	min-height: 100vh
+	width: 100%
+#work-container
+	width: 100%
+	min-height: 80vh
+	h1
+		text-align: center
+		margin: 50px 0
+		font-size: 250%
+	.projects
+		width: 100%
+		height: auto
+		display: flex
+		position: relative
+		justify-content: space-evenly
+		align-items: center
+		#rocky-mountain-renovators,#web-features,#raven-readings
+			width: 25vw
+			max-width: 450px
+			height: calc(4/3 * 25vw)
+			max-height: 600px
+			position: relative
+			border: 1px solid #fff
+			box-sizing: border-box
+			img
+				width: 100%
+		#rocky-mountain-renovators:hover .external-links
+			opacity: 1
+		#web-features:hover .external-links
+			opacity: 1
+		#raven-readings:hover .external-links
+			opacity: 1
+	#left-arrow,
+	#right-arrow
+		width: 5vw
+		padding: 2.5vw
+		position: absolute
+		top: 50%
+		cursor: pointer
+		display: none
+	#left-arrow
+		left: 0
+	#right-arrow
+		right: 0
+
+
+.external-links
+	position: absolute
+	display: flex
+	justify-content: space-between
+	align-items: center
+	bottom: 0
+	opacity: 0
+	height: 50px
+	width: 100%
+	background: rgba(255,255,255,0.7)
+	a
+		height: 37.5px
+		width: 37.5px
+		margin: 0 20px
+		img
+			height: 100%
+			width: 100%
+
+
+
+
+///*****************
+// Contact
+//*****************/
+
+#contact
+	h1,p
+		padding-bottom: 20px
+#email-btn
+	width: 40%
+	height: auto
+	text-align: center
+	display: block
+	margin-top: 2rem
+	font-size: 200%
+	line-height: 150%
+	color: #fff
+	background: #e79810
+	border-radius: 15px
+.contact-icons
+	width: 70%
+	height: auto
+	display: flex
+	img
+		width: 50px
+		height: 50px
+		margin-right: 100px
+
+///*****************
+//Keyframe animations
+//*****************/
+
+@keyframes slide-in
+	0%
+		width: 0
+		height: 10%
+	50%
+		width: 100%
+		height: 10%
+	100%
+		width: 100%
+		height: 100%
+
+@keyframes fade-in
+	0%
+		opacity: 0
+	50%
+		opacity: 1
+	100%
+		opacity: 0
+
+///*****************
+// Media Queries
+//*****************/
+
+@media screen and (max-width: 768px)
+	nav
+		ul
+			width: 100%
+			justify-content: space-evenly
+			li
+				padding: 0
+		img
+			display: none
+	#work-container
+		overflow: hidden
+		#right-arrow
+			display: initial
+		.projects
+			width: 300vw
+			left: 0
+			transition: left 0.3s linear
+			#rocky-mountain-renovators,#web-features,#raven-readings
+				width: 80vw
+				max-width: 80vw
+				// max-width: 600px
+				height: calc(4/3 * 80vw)
+				max-height: calc(4/3 * 80vw)
+				// max-height: calc(4/3 * 600px)
+				margin: 0 10vw
+				.external-links
+					opacity: 1
+					min-height: 15%
+	#contact h1
+		line-height: 150%
+	#email-btn
+		width: 100%
+	.contact-icons
+		justify-content: space-between
+		img
+			margin-right: 0
+
+@media screen and (max-width: 320px)
+	.toggle-container
+		float: none
+		position: absolute
+		bottom: 50px
+		left: 50px
+		.slider
+			border: 1px solid #fff
+	.contact-icons
+		margin: 50px 0 10px 0
