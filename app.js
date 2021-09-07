@@ -16,20 +16,24 @@ backgroundImages.forEach(function(img, index){
 
 let home = document.getElementById('home');
 
-// Function to slide background image toggle
+// Function to slide background and change logo/button color on toggle 
 function slideToggler() {
 	if(toggleCount === 0) {
-		// home.style.backgroundImage = `url(${backgroundImages[1].src})`;
+		home.style.backgroundImage = `url(${backgroundImages[1].src})`;
 		home.classList.add('background-fade-in');
 		home.classList.remove('background-fade-out');
 		toggle.style.marginLeft = '20px';
 		toggleCount++;
+		document.querySelector('#logo').src = ('images/logo-2.svg');
+		document.querySelector('#email-btn').style.background = '#8353ef';
 	} else {
-		// home.style.backgroundImage = `url(${backgroundImages[0].src})`;
+		home.style.backgroundImage = `url(${backgroundImages[0].src})`;
 		home.classList.add('background-fade-out');
 		home.classList.remove('background-fade-in');
 		toggle.style.marginLeft = '0px';
 		toggleCount--;
+		document.querySelector('#logo').src = ('images/logo.svg');
+		document.querySelector('#email-btn').style.background = '#e79810';
 	}
 }
 

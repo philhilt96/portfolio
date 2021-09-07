@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="author" content="Phil Hilt">
+	<meta name="description" content="I am a freelance web developer based in Colorado Springs, CO. I make websites to help business owners gain online presence and elevate their brand.">
 	<meta name="keywords" content="Web Development, Web Design, Front End, JavaScript, HTML, CSS">
 	<title>Phil Hilt</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -12,17 +13,11 @@
 <body>
 	<div class="page-container" id="home">
 		<div class="title-container">
+			<div id="headshot">
+				<img src="images/headshot.png" alt="headshot">
+			</div>
 			<div id="name">
 				<a href="#about"><p>Phil Hilt</p></a>
-			</div>
-			<div id="front">
-				<a href="#about"><p>Front End</p></a>
-			</div>
-			<div id="development">
-				<a href="#work"><p>Development &</p></a>
-			</div>
-			<div id="design">
-				<a href="#work"><p>Design</p></a>
 			</div>
 		</div>
 		<div class="toggle-container">
@@ -39,47 +34,40 @@
 		<nav>
 			<ul>
 				<li><a href="#about">about</a></li>
-				<li><a href="#work">work</a></li>
+				<li><a href="#work">skills</a></li>
 				<li><a href="#contact">contact</a></li>
 			</ul>
 			<div class="logo-container">
 				<a href="#home">
-					<img src="images/logo.svg" alt="logo">
+					<img id="logo" src="images/logo.svg" alt="logo">
 				</a>
 			</div>
 		</nav>
-		<div class="text">
-			<h1>Hello</h1>
-			<p>I am a freelance front-end web developer based in Colorado. Everything I develop is made from scratch using pure HTML, CSS and JavaScript. I believe in user-centered design and all my websites are clean, interactive, and mobile friendly. I mostly work with small business owners to make static websites. Customer service is a top priority to me, and I am very self-driven. Keep scrolling to view some of my <a href="#work">work</a> or to <a href="#contact">hire me</a>.</p>
+		<div class="text" id="about-text">
+			<h1>About Me</h1>
+			<p>
+				I am a third-year Computer Science student in Colorado Springs, CO. I started learning how to program in 2019 by building websites and quickly become enamored with software design and development. 
+				I enrolled at Pikes Peak Community College in the Summer of 2020 to obtain an Associate of Science degree before transferring to the University of Colorado Colorado Springs to complete a Bachelor of Science in Computer Science.
+				Other than learning new skills and growing old ones, I love to spend time outside skiing and backpacking.
+				Keep scrolling to view my contact info and a sample of my work. To see a full pdf resume click <a href="Resume.pdf">here</a>.
+			</p>
 		</div>
 	</div>
 	<div class="page-container" id="work">
 		<div id="work-container">
-			<h1>Projects</h1>
+			<h1>Programming Languages</h1>
 			<div class="projects">
-				<div id="rocky-mountain-renovators">
-					<div class="project-title"><h2>Rocky Mountain Renovators</h2></div>
-					<img src="images/rocky-mountain-renovators.gif" alt="rocky mountain renovators website">
-					<div class="external-links">
-						<a href="https://github.com/philhilt96/rocky-mountain-renovators" target="_blank"><img src="images/github.svg" alt="github icon"></a>
-						<a href="https://rockymountainrenovators.com/" target="_blank"><img src="images/external-link.svg" alt="external-link icon"></a>
-					</div>
+				<div id="python">
+					<div class="project-title"><h2>Python</h2></div>
+					<img src="images/memory-game.gif" alt="Python Tkinter Apllication">
 				</div>
-				<div id="web-features">
-					<div class="project-title"><h2>Web Features</h2></div>
-					<img src="images/web-features.gif" alt="web features">
-					<div class="external-links">
-						<a href="https://github.com/philhilt96" target="_blank"><img src="images/github.svg" alt="github icon"></a>
-						<a href="web-features/index.html" target="_blank"><img src="images/external-link.svg" alt="external-link icon"></a>
-					</div>
+				<div id="c-language">
+					<div class="project-title"><h2>C / C++</h2></div>
+					<img src="images/shell-script.gif" alt="Shell script">
 				</div>
-				<div id="raven-readings">
-					<div class="project-title"><h2>Raven Readings</h2></div>
-					<img src="images/raven-readings.gif" alt="raven readings website">
-					<div class="external-links">
-						<a href="https://github.com/philhilt96/raven-readings" target="_blank"><img src="images/github.svg" alt="github icon"></a>
-						<a href="https://hungry-mahavira-c9fae8.netlify.com/" target="_blank"><img src="images/external-link.svg" alt="external-link icon"></a>
-					</div>
+				<div id="javascript">
+					<div class="project-title"><h2>JavaScript</h2></div>
+					<img src="images/memory-game.gif" alt="JavaScript Memory game">
 				</div>
 			</div>
 			<div id="left-arrow">
@@ -89,17 +77,31 @@
 				<img src="images/right-arrow.svg" alt="click arrow right">
 			</div>
 		</div>
+		<div class="text" id="skill-list">
+			<h1>Other Proficiencies</h1>
+			<ul>
+				<li>Object-Oriented Programming</li>
+				<li>Git/Github</li>
+				<li>Bash/UNIX</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>MS Office Suit (Excel, Word, PowerPoint, Outlook)</li>
+				<li>Autodesk Fusion 360</li>
+				<li>Adobe XD, Illustrator</li>
+			</ul>
+		</div>
 	</div>
 	<div class="page-container" id="contact">
 		<div class="text">
-			<h1>Let's Work Together!</h1>
-			<p>Send me an email and I will reply as soon as I can. You can also see more of my work or contact me on any of the platforms below.</p>
-			<a href="mailto:webdev@philhilt.com" id="email-btn">Email Me</a>
+			<h1>Contact Me</h1>
+			<p>Send me an email and I will reply as soon as I can. You can also contact me one of the platforms below.
+				View a full pdf resume <a href="Resume.pdf">here</a>.
+			</p>
+			<a href="mailto:philt2196@gmail.com" id="email-btn">Email Me</a>
 		</div>
 		<div class="contact-icons">
-			<a href="https://github.com/philhilt96" target="_blank"><img src="images/white-github.svg" alt="github icon"></a>
-			<a href="https://codepen.io/philt2196" target="_blank"><img src="images/codepen.svg" alt="codepen icon"></a>
-			<a href="#" target="_blank"><img src="images/upwork.svg" alt="upwork icon"></a>
+			<a href="https://github.com/philhilt96" target="_blank"><img src="images/white-github.svg" alt="github icon"></a>`
+			<a href="https://www.linkedin.com/in/phillip-hilt/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"></a>
 		</div>
 	</div>
 <script src="app.js"></script>

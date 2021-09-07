@@ -65,7 +65,13 @@ a
 		p
 			box-sizing: border-box
 			padding: 0 10px
-	#front, #development, #design
+	#headshot
+		margin: 10px
+		img
+			height: 150px
+			border-radius: 50%
+			border: 10px solid #000
+	#development, #design
 		font-size: 160%
 		height: 33px
 		margin: 10px 0
@@ -73,12 +79,22 @@ a
 		p
 			padding: 0 40px 0 10px
 			animation-duration: 2s
-	#front
-		width: 157px
 	#development
-		width: 225px
+		width: 240px
 	#design
-		width: 126px
+		width: 100px
+	#skills
+		height: 33px
+		width: 200px
+		p
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 0 10px
+			img
+				width: 30px
+				height: 30px
+
 
 .toggle-container
 	float: right
@@ -110,7 +126,7 @@ a
 	bottom: 25px
 	left: calc(50% - 20px)
 	opacity: 0
-	animation: fade-in 2s linear 4s infinite
+	animation: fade-in 2s linear 2s infinite
 	img
 		height: 100%
 		cursor: pointer
@@ -167,7 +183,10 @@ nav
 		line-height: 150%
 		a
 			text-decoration: underline
-
+	ul
+		font-size: 150%
+		line-height: 150%
+		align: center
 #about
 	h1
 		padding-bottom: 30px
@@ -193,28 +212,24 @@ nav
 		position: relative
 		justify-content: space-evenly
 		align-items: center
-		#rocky-mountain-renovators,#web-features,#raven-readings
+		#python,#c-language,#javascript
 			width: 25vw
-			max-width: 450px
-			height: calc(4/3 * 25vw)
+			max-width: 350px
+			height: calc(100vw/3)
 			max-height: 600px
 			position: relative
-			border: 1px solid #fff
-			box-sizing: border-box
+			display: flex
+			flex-direction: column
+			justify-content: space-between
 			img
 				width: 100%
-		#rocky-mountain-renovators:hover .external-links
-			opacity: 1
-		#web-features:hover .external-links
-			opacity: 1
-		#raven-readings:hover .external-links
-			opacity: 1
+				min-height: 40%
 	#left-arrow,
 	#right-arrow
 		width: 5vw
 		padding: 2.5vw
 		position: absolute
-		top: 50%
+		top: 35%
 		cursor: pointer
 		display: none
 	#left-arrow
@@ -241,8 +256,8 @@ nav
 			height: 100%
 			width: 100%
 
-
-
+#skill-list
+	margin-top: 100px
 
 ///*****************
 // Contact
@@ -315,7 +330,7 @@ nav
 			width: 300vw
 			left: 0
 			transition: left 0.3s linear
-			#rocky-mountain-renovators,#web-features,#raven-readings
+			#python,#c-language,#javascript
 				width: 80vw
 				max-width: 80vw
 				// max-width: 600px
@@ -326,6 +341,21 @@ nav
 				.external-links
 					opacity: 1
 					min-height: 15%
+			.project-title
+				position: absolute
+				display: -webkit-box
+				display: -ms-flexbox
+				display: flex
+				-webkit-box-pack: justify
+				-ms-flex-pack: justify
+				justify-content: space-between
+				-webkit-box-align: center
+				-ms-flex-align: center
+				align-items: center
+				top: -50px
+				left: 0
+				width: 100%
+				height: 50px
 	#contact h1
 		line-height: 150%
 	#email-btn
@@ -345,3 +375,7 @@ nav
 			border: 1px solid #fff
 	.contact-icons
 		margin: 50px 0 10px 0
+	.title-container
+		#development, #design
+			p
+				padding: 0 10px
