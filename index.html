@@ -91,11 +91,17 @@
 			<div class="carousel-item active">
 				<div class="card bg-secondary text-white mx-auto d-block" style="width: 80%;">
 					<div class="card-body">
-						<h5 class="card-title">Air Quality Monitor</h5>
-						<h6 class="card-subtitle mb-2">Card subtitle</h6>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h2 class="card-title">Air Quality Monitor</h2>
+						<h4 class="card-subtitle mb-2">Home Module to Log and Dispaly Temperature, Humidity, and Index of Air Quality (IAQ)</h6>
+						<ul>
+							<li>Used MicroPython with Raspberry Pi Pico with Kitronik Air Quality Datalogging Board to collect data</li>
+							<li>Data sent over MQTT to Linux SBC for data collection with InfluxDB (NoSQL) database</li>
+							<li>Webpage hosted with Node.js to view and analyze data over time</li>
+						</ul>
+						<!--
 						<a href="#" class="card-link">Card link</a>
 						<a href="#" class="card-link">Another link</a>
+						-->
 					</div>
 				</div>
 			</div>
@@ -104,7 +110,8 @@
 					<div class="card-body">
 						<h2 class="card-title">Forest Fire Regrowth Analysis</h2>
 						<h4 class="card-subtitle mb-2">University Machine Learning (ML) Project</h4>
-						<img class="mx-auto img-fluid" src="images/forest_fire_analysis.gif" alt="Forest Fire Analysis Gif">
+						<!-- <img class="mx-auto img-fluid" src="images/forest_fire_analysis.gif" alt="Forest Fire Analysis Gif"> -->
+						<!--
 						<ul class="card-text">
 							<li>Project was developed in Jupyter Notebook using Google Colab</li>
 							<li>Implemented Random Forests (RF) ML Model to Identify Key Variables Contributing to Post-Wildfire Vegetation Regeneration</li>
@@ -112,6 +119,12 @@
 							<li>Trained RF model using scikit-learn and Numpy using Normalized Burn Ratio (NBR) as label</li>
 							<li>Used various vegetation and moisture indexes from AVIRIS data as features</li>
 							<li>By analyzing the frequency of features in top level nodes of the Decision Trees (DT) within the RF model framework provided insight into which variables contribute the most to vegetation recovery</li>
+						</ul>
+						-->
+						<ul>
+							<li>Implemented Random Forests (RF) ML Model to Identify Key Variables Contributing to Post-Wildfire Vegetation Regeneration</li>
+							<li>Used Jupyter to train RF model using scikit-learn and Numpy using GIS dataset</li>
+							<li>Analyzed frequency of features in top level nodes to proved insight into which variables contribute the most to vegetation recover</li>
 						</ul>
 						<a href="https://github.com/philhilt96/forest_fire_regrowth_analysis" target="_blank" class="card-link">Link To Project</a>
 						<a href="./files/phil_hilt_sean_lord_forest_fire_analysis_report.pdf" target="_blank" class="card-link">View PDF Summary</a>
@@ -121,11 +134,17 @@
 			<div class="carousel-item">
 				<div class="card bg-secondary text-white mx-auto d-block" style="width: 80%;">
 					<div class="card-body">
-						<h5 class="card-title">Audio Spectrum Visualization with LEDs</h5>
-						<h6 class="card-subtitle mb-2">Card subtitle</h6>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h2 class="card-title">Audio Spectrum Visualization with LEDs</h2>
+						<h4 class="card-subtitle mb-2">Adafruit Neopixel LED Strip used with Raspberry Pi Zero W to dispaly audio spectrum</h4>
+						<ul>
+							<li>Used GPIO of RPI to control LED display</li>
+							<li>Collected USB data with microphone</li>
+							<li>Implemented Fast Fourier Transform (FFT) with Python to perform spectral analysis and correlate RGB to amplitude</li>
+						</ul>
+						<!--
 						<a href="#" target="_blank" class="card-link">Card link</a>
 						<a href="./files/phil_hilt_sean_lord_forest_fire_analysis_report.pdf" class="card-link">Another link</a>
+						-->
 					</div>
 					</div>
 			</div>
