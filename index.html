@@ -4,11 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="author" content="Phil Hilt">
-	<meta name="description" content="Computer Science student based in Colorado Springs, CO."">
-	<meta name="keywords" content="Software Development, Web Design, Front End, JavaScript, Python, C++">
+	<meta name="description" content="Experienced Software Engineer">
+	<meta name="keywords" content="Experienced Software Engineer">
 	<title>Phil Hilt</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="page-container" id="home">
@@ -18,6 +22,9 @@
 			</div>
 			<div id="name">
 				<a href="#about"><p>Phil Hilt</p></a>
+			</div>
+			<div id="development">
+				<a href="#work"><p>Software&nbspEngineer</p></a>
 			</div>
 		</div>
 		<div class="toggle-container">
@@ -34,7 +41,7 @@
 		<nav>
 			<ul>
 				<li><a href="#about">about</a></li>
-				<li><a href="#work">skills</a></li>
+				<li><a href="#work">experience</a></li>
 				<li><a href="#contact">contact</a></li>
 			</ul>
 			<div class="logo-container">
@@ -46,61 +53,119 @@
 		<div class="text" id="about-text">
 			<h1>About Me</h1>
 			<p>
-				I am a third-year Computer Science student in Colorado Springs, CO. I started learning how to program in 2019 by building websites and quickly become enamored with software design and development. 
-				I enrolled at Pikes Peak Community College in the Summer of 2020 to obtain an Associate of Science degree before transferring to the University of Colorado Colorado Springs to complete a Bachelor of Science in Computer Science.
-				Other than learning new skills and growing old ones, I love to spend time outside skiing and backpacking.
-				Keep scrolling to view my contact info and a sample of my work. To see a full pdf resume click <a href="Resume.pdf">here</a>.
+				I am an avid problem solver that thrives on multidisciplinary teams by fostering collaboration and taking initiative.
+				I have several years experience writing software for web applications and embedded systems and have a results-oriented mindset driven by a tenacious work ethic and an eagerness to learn. I hold a Bachelor of Science in Computer 
+				Science from the University of Colorado Colorado Springs, and an Associate of Science from Pikes Peak State College. 
 			</p>
 		</div>
 	</div>
 	<div class="page-container" id="work">
-		<div id="work-container">
-			<h1>Programming Languages</h1>
-			<div class="projects">
-				<div id="python">
-					<div class="project-title"><h2>Python</h2></div>
-					<img src="images/tkinter.gif" alt="Python Tkinter Apllication">
-				</div>
-				<div id="c-language">
-					<div class="project-title"><h2>C / C++</h2></div>
-					<img src="images/shell-script.gif" alt="Shell script">
-				</div>
-				<div id="javascript">
-					<div class="project-title"><h2>JavaScript</h2></div>
-					<img src="images/memory-game.gif" alt="JavaScript Memory game">
-				</div>
-			</div>
-			<div id="left-arrow">
-				<img src="images/left-arrow.svg" alt="click arrow left">
-			</div>
-			<div id="right-arrow">
-				<img src="images/right-arrow.svg" alt="click arrow right">
-			</div>
-		</div>
 		<div class="text" id="skill-list">
-			<h1>Other Proficiencies</h1>
+			<h1>Skills</h1>
 			<ul>
-				<li>Object-Oriented Programming</li>
-				<li>Git/Github</li>
-				<li>Bash/UNIX</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>MS Office Suit (Excel, Word, PowerPoint, Outlook)</li>
-				<li>Autodesk Fusion 360</li>
-				<li>Adobe XD, Illustrator</li>
+				<li>
+					C/C++, Python, JavaScript, HTML/CSS, Bootstrap, Bash, Java, Jupyter, 
+					Node.js, Vue.js, MongoDB, REST API
+				</li>
+				<li>
+					MCUs (ARM Cortex-M), Communication Protocols (CAN bus, I2C, UART, SPI, PWM)
+					Computer Networking (TCP/IP, MQTT, UDP), Arduino, Linux SBCs (Raspberry Pi, BeagleBone)
+				</li>
+				<li>
+					Google Cloud Platform (GCP), Linux Services, GUI (Tkinter, PyQT), Git,
+					Data Analysis & Visualization (Pandas, NumPy, Matplotlib), Machine Learning (scikit-learn)
+				</li>
+				<li> 
+					Technical Writing & Documentation, Creative Problem Solving, Interpersonal Communication
+				</li>
 			</ul>
+		</div>
+		<h1>Personal Projects</h1>
+		<div id="carouselExampleIndicators" class="my-5 carousel slide" data-interval="false" data-ride="carousel" style="width:100%">
+			<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="card bg-secondary text-white mx-auto d-block" style="width: 80%;">
+					<div class="card-body">
+						<h2 class="card-title">Air Quality Monitor</h2>
+						<h4 class="card-subtitle mb-2">Home Module to Log and Dispaly Temperature, Humidity, and Index of Air Quality (IAQ)</h6>
+						<ul>
+							<li>Used MicroPython with Raspberry Pi Pico with Kitronik Air Quality Datalogging Board to collect data</li>
+							<li>Data sent over MQTT to Linux SBC for data collection with InfluxDB (NoSQL) database</li>
+							<li>Webpage hosted with Node.js to view and analyze data over time</li>
+						</ul>
+						<!--
+						<a href="#" class="card-link">Card link</a>
+						<a href="#" class="card-link">Another link</a>
+						-->
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="card bg-secondary text-white mx-auto d-block" style="width: 80%;">
+					<div class="card-body">
+						<h2 class="card-title">Forest Fire Regrowth Analysis</h2>
+						<h4 class="card-subtitle mb-2">University Machine Learning (ML) Project</h4>
+						<!-- <img class="mx-auto img-fluid" src="images/forest_fire_analysis.gif" alt="Forest Fire Analysis Gif"> -->
+						<!--
+						<ul class="card-text">
+							<li>Project was developed in Jupyter Notebook using Google Colab</li>
+							<li>Implemented Random Forests (RF) ML Model to Identify Key Variables Contributing to Post-Wildfire Vegetation Regeneration</li>
+							<li>Used Python Pandas Library to perform pre-processing on Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) GIS measurments from the California Rim Fire</li>
+							<li>Trained RF model using scikit-learn and Numpy using Normalized Burn Ratio (NBR) as label</li>
+							<li>Used various vegetation and moisture indexes from AVIRIS data as features</li>
+							<li>By analyzing the frequency of features in top level nodes of the Decision Trees (DT) within the RF model framework provided insight into which variables contribute the most to vegetation recovery</li>
+						</ul>
+						-->
+						<ul>
+							<li>Implemented Random Forests (RF) ML Model to Identify Key Variables Contributing to Post-Wildfire Vegetation Regeneration</li>
+							<li>Used Jupyter to train RF model using scikit-learn and Numpy using GIS dataset</li>
+							<li>Analyzed frequency of features in top level nodes to proved insight into which variables contribute the most to vegetation recover</li>
+						</ul>
+						<a href="https://github.com/philhilt96/forest_fire_regrowth_analysis" target="_blank" class="card-link">Link To Project</a>
+						<a href="./files/phil_hilt_sean_lord_forest_fire_analysis_report.pdf" target="_blank" class="card-link">View PDF Summary</a>
+					</div>
+					</div>
+			</div>
+			<div class="carousel-item">
+				<div class="card bg-secondary text-white mx-auto d-block" style="width: 80%;">
+					<div class="card-body">
+						<h2 class="card-title">Audio Spectrum Visualization with LEDs</h2>
+						<h4 class="card-subtitle mb-2">Adafruit Neopixel LED Strip used with Raspberry Pi Zero W to dispaly audio spectrum</h4>
+						<ul>
+							<li>Used GPIO of RPI to control LED display</li>
+							<li>Collected USB data with microphone</li>
+							<li>Implemented Fast Fourier Transform (FFT) with Python to perform spectral analysis and correlate RGB to amplitude</li>
+						</ul>
+						<!--
+						<a href="#" target="_blank" class="card-link">Card link</a>
+						<a href="./files/phil_hilt_sean_lord_forest_fire_analysis_report.pdf" class="card-link">Another link</a>
+						-->
+					</div>
+					</div>
+			</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
 		</div>
 	</div>
 	<div class="page-container" id="contact">
 		<div class="text">
 			<h1>Contact Me</h1>
-			<p>Send me an email and I will reply as soon as I can. You can also contact me one of the platforms below.
-				View a full pdf resume <a href="Resume.pdf">here</a>.
-			</p>
-			<a href="mailto:philt2196@gmail.com" id="email-btn">Email Me</a>
+			<a href="mailto:philt2196@gmail.com" id="email-btn">Email</a>
 		</div>
 		<div class="contact-icons">
-			<a href="https://github.com/philhilt96" target="_blank"><img src="images/white-github.svg" alt="github icon"></a>`
+			<a href="https://github.com/philhilt96" target="_blank"><img src="images/white-github.svg" alt="github icon"></a>
 			<a href="https://www.linkedin.com/in/phillip-hilt/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"></a>
 		</div>
 	</div>
